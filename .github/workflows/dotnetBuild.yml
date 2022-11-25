@@ -5,7 +5,7 @@ name: .NET
 
 on:
   push:
-    branches: [ "publish" ]
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -23,6 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore --configuration Release
+      working-directory: ./src/api
     - name: Test
       run: dotnet test --no-build --verbosity normal
