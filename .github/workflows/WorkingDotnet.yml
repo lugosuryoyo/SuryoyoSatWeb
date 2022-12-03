@@ -27,4 +27,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish Suryoyo Sat
+      run: dotnet publish -c Release -o /var/www/Suryoyo Sat Web
