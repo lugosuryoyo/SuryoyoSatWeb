@@ -27,4 +27,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish Suryoyo Sat Web//Suryoyo Sat Web.csproj -c Release -o website
+      run: dotnet publish Suryoyo Sat Web//Suryoyo Sat Web.csproj 
